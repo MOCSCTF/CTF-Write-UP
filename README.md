@@ -1,4 +1,4 @@
-# [澳門網絡安全暨奪旗競賽協會（Macau Cyber Security and Capture The Flag Association）](https://www.facebook.com/MOCSCTF)
+# 澳門網絡安全暨奪旗競賽協會（Macau Cyber Security and Capture The Flag Association
 ```
 我們的宗旨：
 1.推動澳門的網絡安全發展及技術研討，相關專業人士的技術交流，及其他有興趣人士等參與本會活動 
@@ -7,4 +7,5 @@
 ```
 
 歡迎加入我們:
-https://ctftime.org/team/120747
+CTFTimes: https://ctftime.org/team/120747
+Facebook: https://www.facebook.com/MOCSCTF
