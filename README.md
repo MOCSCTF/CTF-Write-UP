@@ -6,7 +6,6 @@
 3.探討研究網絡安全技術，培養本地技術人才
 ```
 
-歡迎加入我們:
-CTFTimes: https://ctftime.org/team/120747
-
+歡迎加入我們:</br>
+CTFTimes: https://ctftime.org/team/120747</br>
 Facebook: https://www.facebook.com/MOCSCTF
