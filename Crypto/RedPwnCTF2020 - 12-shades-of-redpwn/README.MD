@@ -60,7 +60,7 @@ def clock(pix):
 
 >run the script again use the above matching.
 
-```
+```python
 tempflag=''
 for i in range(int(w/500)):
   tempflag+=str(clock(pix[i*500+50],600))
@@ -68,7 +68,7 @@ for i in range(int(w/500)):
 
 >we got the flag in base12 form, transform it to base10 and we get the flag
 
-```
+```python
 for i in tempflag[1:-1].split(","):
   print(chr(int(i,12)),end="")
 ```
