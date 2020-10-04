@@ -12,17 +12,17 @@
 the challenge provide a file:
 
 ```
-**Warning: This file might be detected as malicious by some AV. We don't need to run the program directly in this Write-up.**
-[gatekeeper.zip](./gatekeeper.zip)
+**Warning: This file might be detected as malicious by some AV. We don't need to run the program directly in this Write-up.**</br>
+[gatekeeper.zip](./gatekeeper.zip)</br>
 unzip password:**TMCTF2020**
 
 ## Write up
->It is a windows executable file and with 4.8 MB size, seems a lot of reverse stuff to check...
+>It is a windows executable file and with 4.8 MB size, seems a lot of reverse stuff to check...</br>
 ![img](./img/2.png)
 
->check the file in binary, we can find some of interesting string in .rdata section.
-Py_FileSystemDefaultEncoding,Py_....,__main__?
-looks like a Python script packed to a EXE file?
+>check the file in binary, we can find some of interesting string in .rdata section.</br>
+Py_FileSystemDefaultEncoding,Py_....,__main__?</br>
+looks like a Python script packed to a EXE file?</br>
 ![img](./img/1.png)
 
 >checked in Python Document, we can confirm that this EXE is a wrapper for a Python script.
@@ -36,21 +36,21 @@ python pyinstxtractor.py gatekeeper.exe
 ```
 ![img](./img/3.png)
 
->ok, the file l11_opy_.pyc extracted. the last thing we need is just reverse it.
-put it on https://python-decompiler.com/.
+>ok, the file l11_opy_.pyc extracted. the last thing we need is just reverse it.</br>
+put it on https://python-decompiler.com/.</br>
 ![img](./img/4.png)
 
->but fail to recognized. do research on python decompiler, i aware that cause by l11_opy_.pyc doesn't have the correct magic byte.
-incorrect magic byte
-![img](./img/5.png)
-correct magic byte
+>but fail to recognized. do research on python decompiler, i aware that cause by l11_opy_.pyc doesn't have the correct magic byte.</br>
+incorrect magic byte</br>
+![img](./img/5.png)</br>
+correct magic byte</br>
 ![img](./img/6.png)
 
 >use hexeditor modify the magic byte of l11_opy_.pyc then we got the reversed python file
 ```
 420d 0d0a 0000 0000 7079 6930
 ```
-![img](./img/7.png)
+![img](./img/7.png)</br>
 [gatekeeper.py](./gatekeeper.py)
 
 
