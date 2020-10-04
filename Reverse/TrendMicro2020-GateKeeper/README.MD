@@ -1,4 +1,4 @@
-# TrednMicro2020 – GateKeeper
+# TrendMicro2020 – GateKeeper
 
 - Write-Up Author: Rb916120 \[[MOCTF](https://www.facebook.com/MOCSCTF)\]
 
