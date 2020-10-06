@@ -137,11 +137,11 @@
 ***
 ### 5. Summary:
 
-> 1. Weak password protection for support and service accounts is always one of critical risk vectors for unauthorized access. Weak password protection is more than weak password, it also includes authentication setting (e.g. &#39;Disable require Kerberos pre-authentication&#39;, which normally is to support legacy applications not support Kerberos authentication) or password management process (e.g. the password is leaked but not update the password timely)
-> 
-> 2. Store sensitive information in SMB share should be more cautious. Like this case, store memory dump in SMB share without enough protection is the same as recording your password in an Excel file and place it to a SMB share with public access. (It feels like a joke but still happens in many organizations nowadays)
-> 
-> 3. Backup Operators have some special privilege and sometimes it can be abused for privilege escalation. For example, dump the AD database to get the hash of Administrator, then use Pass the Hash technique to get Administrator privilege.
-> 
-> 4. dit cannot be backup by simple copy. Shadow copy need to be leverage to dump the file.
+1. Weak password protection for support and service accounts is always one of critical risk vectors for unauthorized access. Weak password protection is more than weak password, it also includes authentication setting (e.g. &#39;Disable require Kerberos pre-authentication&#39;, which normally is to support legacy applications not support Kerberos authentication) or password management process (e.g. the password is leaked but not update the password timely)
+
+2. Store sensitive information in SMB share should be more cautious. Like this case, store memory dump in SMB share without enough protection is the same as recording your password in an Excel file and place it to a SMB share with public access. (It feels like a joke but still happens in many organizations nowadays)
+
+3. Backup Operators have some special privilege and sometimes it can be abused for privilege escalation. For example, dump the AD database to get the hash of Administrator, then use Pass the Hash technique to get Administrator privilege.
+
+4. dit cannot be backup by simple copy. Shadow copy need to be leverage to dump the file.
 
