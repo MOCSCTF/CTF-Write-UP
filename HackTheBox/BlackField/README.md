@@ -42,10 +42,11 @@
 
 	![img](./img/5.png)
 
-
+***
 ### 2. Penetration Strategy:
 - According to the information gathered, we got to know that the target is to compromise the domain. We have the user list (a list of account login name), and a list of SMB share but we don&#39;t have any password available. We may consider performing brute force but it&#39;s not a good idea. We can try to get a valid password if possible, then see if we can elevate the account privilege. Specially in the user list, we can see accounts called &#39;support&#39;, &#39;audit2020&#39; and in the SMB share there is a share called &#39;forensic&#39; which should be linked to &#39;audit2020&#39; account and contain other sensitive information by its name implied.
 
+***
 ### 3. Get Low Privilege User:
 
 - Use &#39;GetNPUser.py&#39; under Impacket to see if there is any user with &#39;required Kerberos pre-authentication&#39; disabled (refer to: [https://social.technet.microsoft.com/wiki/contents/articles/23559.kerberos-pre-authentication-why-it-should-not-be-disabled.aspx](https://social.technet.microsoft.com/wiki/contents/articles/23559.kerberos-pre-authentication-why-it-should-not-be-disabled.aspx) for details), which may be caused by requirement of some legacy application. If so, then we can get the hash of that user:
@@ -89,7 +90,8 @@
 	![img](./img/14.png)
 
 	Got the user flag from svc\_backup account Desktop folder.
-
+	
+***
 ### 4. Get Administrator Access:
 
 - Check the user groups svc\_backup belongs to:
@@ -132,7 +134,14 @@
 
 	Done. We got the administrator privilege.
 
+***
 ### 5. Summary:
 
->1. Weak password protection for support and service accounts is always one of critical risk vectors for unauthorized access. Weak password protection is more than weak password, it also includes authentication setting (e.g. &#39;Disable require Kerberos pre-authentication&#39;, which normally is to support legacy applications not support Kerberos authentication) or password management process (e.g. the password is leaked but not update the password timely)</br></br>2. Store sensitive information in SMB share should be more cautious. Like this case, store memory dump in SMB share without enough protection is the same as recording your password in an Excel file and place it to a SMB share with public access. (It feels like a joke but still happens in many organizations nowadays)</br></br>3. Backup Operators have some special privilege and sometimes it can be abused for privilege escalation. For example, dump the AD database to get the hash of Administrator, then use Pass the Hash technique to get Administrator privilege.</br></br>4. dit cannot be backup by simple copy. Shadow copy need to be leverage to dump the file.
+> 1. Weak password protection for support and service accounts is always one of critical risk vectors for unauthorized access. Weak password protection is more than weak password, it also includes authentication setting (e.g. &#39;Disable require Kerberos pre-authentication&#39;, which normally is to support legacy applications not support Kerberos authentication) or password management process (e.g. the password is leaked but not update the password timely)
+> 
+> 2. Store sensitive information in SMB share should be more cautious. Like this case, store memory dump in SMB share without enough protection is the same as recording your password in an Excel file and place it to a SMB share with public access. (It feels like a joke but still happens in many organizations nowadays)
+> 
+> 3. Backup Operators have some special privilege and sometimes it can be abused for privilege escalation. For example, dump the AD database to get the hash of Administrator, then use Pass the Hash technique to get Administrator privilege.
+> 
+> 4. dit cannot be backup by simple copy. Shadow copy need to be leverage to dump the file.
 
