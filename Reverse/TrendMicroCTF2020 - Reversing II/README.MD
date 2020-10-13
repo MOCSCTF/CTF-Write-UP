@@ -136,7 +136,9 @@ while froze $0033 or $0034 to zero we can go through the brick in weird way
 ![img](./img/9.gif)
 
 so, if we jump over 94AF(INC $0033) and 94B1(INC $0034).
+
 then we just consider how to let the result to be false on $94AD.
+
 the order of the code is :
  1. Load the value of $9916 to register A
  2. put register A's value to $0031
