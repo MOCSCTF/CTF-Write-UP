@@ -18,7 +18,7 @@ unzip password:**TMCTF2020**
 
 ## Write up
 >It is a windows executable file and with 4.8 MB size, seems a lot of reverse stuff to check...</br>
-![img](./img/2.PNG)
+![img](./img/2.png)
 
 >check the file in binary, we can find some of interesting string in .rdata section.</br>
 Py_FileSystemDefaultEncoding,Py_....,__main__?</br>
@@ -34,11 +34,11 @@ which mean we might be possible to extract the python file from the EXE and deco
 ```shell
 python pyinstxtractor.py gatekeeper.exe
 ```
-![img](./img/3.PNG)
+![img](./img/3.png)
 
 >ok, the file l11_opy_.pyc extracted. the last thing we need is just reverse it.</br>
 put it on https://python-decompiler.com/.</br>
-![img](./img/4.PNG)
+![img](./img/4.png)
 
 >but fail to recognized. do research on python decompiler, i aware that cause by l11_opy_.pyc doesn't have the correct magic byte.</br>
 incorrect magic byte</br>
@@ -68,7 +68,7 @@ while True:
     else:
         print(l1l1('?????????\u0871\u086b\u0861\u0874\u0867?\u0878\u0877\u087f?\u0862\u0869\u0864\u086d\u0873??'))
 ```
-![img](./img/8.PNG)
+![img](./img/8.png)
 
 >i bet this if statement could print the flag, modify the code to:
 ```python
@@ -85,5 +85,5 @@ while True:
 ```
 
 >and run the code again.This time, whatever we put the program will show us the result.
-![img](./img/9.PNG)</br>
+![img](./img/9.png)</br>
 >boom! Flag:**TMCTF{m0th34_H4msT3r!}**
