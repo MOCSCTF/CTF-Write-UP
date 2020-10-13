@@ -1,4 +1,4 @@
-# TrendMicro2020 – Reverse II
+# TrendMicroCTF2020 – Reverse II
 
 - Write-Up Author: Rb916120 \[[MOCTF](https://www.facebook.com/MOCSCTF)\]
 
