@@ -1,4 +1,4 @@
-# TrendMicroCTF2020 – Reverse II
+# TrendMicroCTF2020 â€“ Reverse II
 
 - Write-Up Author: Rb916120 \[[MOCTF](https://www.facebook.com/MOCSCTF)\]
 
@@ -7,24 +7,24 @@
 ## **Question:**
 > Reverse II
 
-![img]("./img/TMCTF_REV-2.PNG")
+![img](./img/TMCTF_REV-2.PNG)
 
-** I solve this question after the event, no way to verify the flag. this write-up just for recording i how to solve the challenge. actually learn a lot in assembly and so impressive on the old school NES game are make by a little 6502 chip." **</br>
+**I solve this question after the event, no way to verify the flag. this write-up just for recording i how to solve the challenge. actually learn a lot in assembly and so impressive on the old school NES game are make by a little 6502 chip.**</br>
 [impossible_game.nes](./impossible_game.nes)</br>
 
 ## Write up
-> ** First, below tool required in this article. **
+> **First, below tool required in this article.**</br>
 >[FCEUX](https://github.com/TASVideos/fceux) - An open source NES Emulator for Windows and Unix that features solid emulation accuracy and state of the art tools for power users. For some reason casual gamers use it too.
 >
-> ** Useful Reference: **
->[Easy6502](https://skilldrick.github.io/easy6502/) - useful to learn or test your 6502 assembly code
->[Nerdy Nights Mirror](https://nerdy-nights.nes.science/#main_tutorial-5) - a great tutorial to learn how to build your own NES game and theory
->[FCEUX documents](http://fceux.com/web/help/fceux.html?NESRAMMappingFindingValues.html) - great explain the mechanism of NES and the emulator
->[NES reverse with Ghidra](https://allthingsreversed.io/solving-space-fights-ctf/) - great article to learn how to dissemble NES in Ghidra
+> **Useful Reference:**</br>
+>[Easy6502](https://skilldrick.github.io/easy6502/) - useful to learn or test your 6502 assembly code</br>
+>[Nerdy Nights Mirror](https://nerdy-nights.nes.science/#main_tutorial-5) - a great tutorial to learn how to build your own NES game and theory</br>
+>[FCEUX documents](http://fceux.com/web/help/fceux.html?NESRAMMappingFindingValues.html) - great explain the mechanism of NES and the emulator</br>
+>[NES reverse with Ghidra](https://allthingsreversed.io/solving-space-fights-ctf/) - great article to learn how to dissemble NES in Ghidra</br>
 
 ***
 
->we can run the NES rom in FCEUX, that is a simple game we can move the character left,right and jump. and the challenge is go through the wall with ** [eight charter game genie cheat code](http://fceux.com/web/help/fceux.html?GameGenieEncoderDecoder.html) **
+>we can run the NES rom in FCEUX, that is a simple game we can move the character left,right and jump. and the challenge is go through the wall with **[eight charter game genie cheat code](http://fceux.com/web/help/fceux.html?GameGenieEncoderDecoder.html)**
 ![img](./img/1.PNG)
 
 ```
@@ -97,14 +97,14 @@ These values rarely (if at all) reside outside blocks 1, 3, 4, or 5.  This knowl
  00:9740:A4 31     LDY $0031					<-- load the value of $0031 to register Y ($Y = 02)
  00:9742:B9 14 99  LDA $9914,Y					<-- load the value of $9914 + Y to register A ($9916=C0)
  00:9745:85 31     STA $0031					<--	store the value of register A to $0031 ($0031 = C0)
- 00:9747:60        RTS							<-- return the subroutine ($94A9)
+ 00:9747:60        RTS						<-- return the subroutine ($94A9)
 	......
 	......
  00:94A9:A5 31     LDA $0031					<-- load the value of $0031 to register A ($A = C0)
- 00:94AB:29 40     AND #$40						<-- bitwise and operation with A(C0) and 0x40(11000000 ^ 100000) that leave only seventh bit of register A 
+ 00:94AB:29 40     AND #$40					<-- bitwise and operation with A(C0) and 0x40(11000000 ^ 100000) that leave only seventh bit of register A 
  00:94AD:F0 04     BEQ $94B3					<-- jump to $94B3 if zero flag is 1
  00:94AF:E6 33     INC $0033					<-- increase  $0033 by 1
- 00:94B1:E6 34     INC $0034					<--	increase  $0034 by 1
+ 00:94B1:E6 34     INC $0034					<-- increase  $0034 by 1
 	......
 	......
 ```
@@ -115,10 +115,10 @@ These values rarely (if at all) reside outside blocks 1, 3, 4, or 5.  This knowl
 >$0033 and $0034 are controlling the the character weather or not go through the brick
 ```
  00:94AF:E6 33     INC $0033					<-- increase  $0033 by 1
- 00:94B1:E6 34     INC $0034					<--	increase  $0034 by 1
+ 00:94B1:E6 34     INC $0034					<-- increase  $0034 by 1
 ```
 >while froze $0033 or $0034 to zero we can go through the brick in weird way
-![img](./img/9.PNG)
+![img](./img/9.gif)
 
 >so, if we jump over 94AF(INC $0033) and 94B1(INC $0034).
 >then we just consider how to let the result to be false on $94AD.
@@ -132,5 +132,5 @@ These values rarely (if at all) reside outside blocks 1, 3, 4, or 5.  This knowl
 >thence, we just put a value that seventh bit is 0 on $9916 ,then we can go trough the wall
 ![img](./img/10.gif)
 
->we can use AAOPVPEG as cheat code
->possible Flag{AAOPVPEG}
+>we can use AAOPVPEG as cheat code</br>
+>**possible** Flag{AAOPVPEG}
