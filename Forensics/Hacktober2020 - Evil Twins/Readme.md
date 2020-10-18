@@ -34,7 +34,7 @@ Then, we can list the process tree with *pstree* command.
 ```
 vol.py -f '/root/Desktop/hacktober/mem.raw' --profile=Win10x64_17134 pstree
 ```
-![img](./img/3.PNG)
+![img](./img/3.png)
 
 look at the result, 2 parts suspected. multiple explorer.exe and cmd.exe. compare to my own windows, the parent process or explorer.exe shoule be userinit.exe</br>
 for more info can be found here [SANS Evil Hunt Poster](https://digital-forensics.sans.org/media/DFPS_FOR508_v4.6_4-19.pdf).
