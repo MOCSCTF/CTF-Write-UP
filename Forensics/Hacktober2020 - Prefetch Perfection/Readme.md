@@ -2,7 +2,7 @@
 
 - Write-Up Author: Rb916120 \[[MOCTF](https://www.facebook.com/MOCSCTF)\]
 
-- Flag:flag{2017–05–01 21:11:41}
+- Flag:flag{2017â€“05â€“01 21:11:41}
 
 ## **Question:**
 Captured Memories
@@ -14,6 +14,7 @@ Captured Memories
 ## Write up
 **First, below tool required in this article.**</br>
 [PECmd](https://github.com/EricZimmerman/PECmd) -  Great Prefetch parser which can parse the timeline to csv
+
 [Eric Zimmerman's Tools](https://ericzimmerman.github.io/#!index.md) - This guy developed a lot of tools to forensic tools to save our life.Thanks Eric!
 
 First, the description given a big hints.[Prefetch files](https://forensicswiki.xyz/wiki/index.php?title=Prefetch) are another handy tool to show evidence of exection.</br>
@@ -38,4 +39,4 @@ then we got 2 output file
 search for IEXPLORE.EXE
 ![img](./img/2.PNG)
 
->flag{2017–05–01 21:11:41}
+>flag{2017â€“05â€“01 21:11:41}
