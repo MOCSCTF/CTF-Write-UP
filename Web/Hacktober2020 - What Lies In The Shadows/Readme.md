@@ -12,7 +12,7 @@ What Lies In The shadows
 
 ## Write up
 **First, below tool required in this article.**</br>
-[Tor Browser](https://www.torproject.org/) -  all in one browser powered by Firefox that let you easy to surf onion network a.k.a **drak web**
+[Tor Browser](https://www.torproject.org/) -  all in one browser powered by Firefox that let you easy to surf onion network a.k.a **dark web**
 
 **reference:**</br>
 [Onion routing](https://en.wikipedia.org/wiki/Onion_routing)
