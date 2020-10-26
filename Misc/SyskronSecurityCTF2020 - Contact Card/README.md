@@ -11,7 +11,7 @@ Contact Card
 
 >Info: This challenge does NOT contain any malicious files.
 
-[confidential.zip](./confidential.zip) password: edeb142
+Attachment: [confidential.zip](./confidential.zip)
 
 ## Write up
 >In this challenge, we are given a zip file, after unzip the file, the file structure is as below:
