@@ -30,6 +30,8 @@ Prefetch Perfection 2
 [Plus code](https://maps.google.com/pluscodes/)  
 [Plus Codes (Open Location Code) and Scripting in Google BigQuery](https://towardsdatascience.com/plus-codes-open-location-code-and-scripting-in-google-bigquery-30b7278f3495)  
 
+---
+
 First, the challenge is asking for the **local part of the plus code** of a location and provide a bz2 file.  
 so, what is plus code?  
 
@@ -47,14 +49,14 @@ ok, that is a code to represent geolocation.
 next, look at the file and try to decompression.
 ![img](./img/1.PNG)  
 
-what!? the file is not a bzip2 file???
+what!? the file is not a bzip2 file???  
 ![img](./img/2.PNG)
 
-lets look deeper,
+lets look deeper,  
 ![img](./img/3.PNG)  
 
 
-something weir.. wait, JFIF? maybe this file is a JPG?  
+something weird.. wait, JFIF? maybe this file is a JPG?  
 modify the magic number. we finally see the image
 ```
 FF D8 FF E0 00 10 4A 46 49 46 00 01
@@ -63,12 +65,12 @@ FF D8 FF E0 00 10 4A 46 49 46 00 01
 ![img](./img/4.PNG)  
 
 >there are four big things with red and white color on the right  
-so this is a location we are looking for. chimney in the world?
+so this is a location we are looking for. chimney in the world?  
 ![img](./img/Sightseeingagain.jpg)
 
-look at the Exif infomation. There is a GPS latitude\(45.461892 N\)
+look at the Exif infomation. There is a GPS latitude\(45 deg 27' 42.81" N\)
 ```
-# exiftool -c "%.6f" 1.jpg
+# exiftool 1.jpg
 ExifTool Version Number         : 12.07
 File Name                       : 1.jpg
 Directory                       : .
@@ -92,7 +94,7 @@ Light Value                     : 11.3
 ```
 
 from here, i am no clue how to go further. look around the in the internet.
-some OSINT case inspired me [OSINT case](https://haax.fr/en/writeups/osint-geoint/osint-flight-tracking-challenge/).
+some [OSINT case](https://haax.fr/en/writeups/osint-geoint/osint-flight-tracking-challenge/) inspired me.
 
 the photo was take at 2020:06:21 11:12:59.1+02:00,
 ![img](./img/5.PNG)  
@@ -104,7 +106,7 @@ combine the latitude and my guess.
 ![img](./img/7.PNG)  
 
 the place should located in the EU around France to Bulgaria .
-Search Chimney on [Wikimapia.org](http://wikimapia.org/#lang=en&lat=45.614037&lon=15.249023&z=5&m=w&tag=148) and combine previous assumption.There is only 8 place meets my assumption.
+Search Chimney on [Wikimapia.org](http://wikimapia.org/#lang=en&lat=45.614037&lon=15.249023&z=5&m=w&tag=148) and combine previous assumption.There is only 8 places meets my assumption.  
 ![img](./img/8.PNG)  
 
 and i found this place.**Fumaiolo centrale (Venice)/Coordinates:  45°25'53"N 12°14'44"E**
@@ -113,7 +115,7 @@ and i found this place.**Fumaiolo centrale (Venice)/Coordinates:  45°25'53"N 12
 go to Goole Maps. there is a blue building and primarily match the photo.
 ![img](./img/10.PNG)  
 
-looking around this place. there are four chimney in the right conner.
+looking around this place. there are four chimneys in the right conner.
 ![img](./img/11.PNG)  
 
 Bingo!!
