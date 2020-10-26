@@ -107,7 +107,7 @@ combine the latitude and my guess.
 
 the place should located in the EU around France to Bulgaria .
 Search Chimney on [Wikimapia.org](http://wikimapia.org/#lang=en&lat=45.614037&lon=15.249023&z=5&m=w&tag=148) and combine previous assumption.There is only 8 places meets my assumption.  
-![img](./img/8.PNG)  
+![img](./img/8.png)  
 
 and i found this place.**Fumaiolo centrale (Venice)/Coordinates:  45°25'53"N 12°14'44"E**
 ![img](./img/9.PNG)  
