@@ -15,7 +15,8 @@ Contact Card
 ![img](./img/1.png)
 
 >There are some contact files, and some other files are found in the folders:
->http folder (There are some cpl files, which are for Control Panel in Windows: (https://support.microsoft.com/en-us/help/149648/description-of-control-panel-cpl-files) Seems interesting, we can investigate further later) :
+>http folder (There are some cpl files, which are for Control Panel in Windows: (https://support.microsoft.com/en-us/help/149648/description-of-control-panel-cpl-files) Seems interesting, we can investigate further later):
+
 ![img](./img/2.png) 
 
 >https folder (All files have zero file size, seems not interesting ones):
@@ -50,6 +51,7 @@ An attacker can leverage this vulnerability to execute code in the context of th
 ![img](./img/9.png)
 
 >Further examine the content of message box, there is string ‘xSAvEyND’ and it mentioned that ‘We pasted this for you’. Recalled another 300 marks challenge ‘HID’, pastebin.com is used for the hacker to download malicious powershell, and the length of ‘xSAvEyND’ is the same as the path section of pastebin.com, so it’s possible that same technique is used here. let’s try to access **https://pastebin.com/raw/xSAvEyND**:
+
 ![img](./img/10.png)
 
 >syskronCTF{n3v3r_c11ck_unkn0wn_11nk5}
