@@ -7,10 +7,12 @@
 Contact Card
 
 >Challenge description  
->Some of our employees have received an email with this attachment. The message says that there was some confidential contact data leaked (Password for attachment: edeb142). We recon it is some kind of phishing, but the contact files look clean, do they?  
+
+>Some of our employees have received an email with this attachment. The message says that there was some confidential contact data leaked (Password for attachment: edeb142). We recon it is some kind of phishing, but the contact files look clean, do they?
+
 >Info: This challenge does NOT contain any malicious files.
 
----
+Attachment: [confidential.zip](./confidential.zip)
 
 ## Write up
 In this challenge, we are given a zip file, after unzip the file, the file structure is as below:  
