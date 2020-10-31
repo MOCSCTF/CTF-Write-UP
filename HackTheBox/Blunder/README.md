@@ -4,12 +4,6 @@
 
 ## **Question:**
 > Blunder
-```
-	OS: Linux
-	Difficulty: Easy
-	Points:	20
-	Release: 03,May,2020
-```
 
 ![img](./img/1.png)
 
@@ -213,7 +207,7 @@ Attacker Machine: 10.10.14.16
 
 	The system file shows that this bludit CMS setup to use the file-based database, three hashed password are found at users.php of two bludit folders. According to the official website for [recovery the admin password file](https://raw.githubusercontent.com/bludit/password-recovery-tool/master/recovery.php), this hashed password is in SHA-1 format. Using the [online tool](https://md5decrypt.net/en/Sha1/) to decrypt the hashed password. The password for hugo account obtains which is **Password120**.
 
-	[img](./img/12.png)
+	![img](./img/12.png)
 
 	I find that Hugo reuse his password reuse on their system account. Let's spawn a PTY shell, as this will allow us to use the su command. The low privilege user account obtain.
 
@@ -224,7 +218,7 @@ Attacker Machine: 10.10.14.16
 	Password: Password120
 	```
 
-	[img](./img/13.png)
+	![img](./img/13.png)
 
 ***
 ### 4. Privilege Escalation:
@@ -273,6 +267,9 @@ Missing patches are very common in the real-life system, we need to keep the sys
 ### 5. Reference Link
 
 https://rastating.github.io/bludit-brute-force-mitigation-bypass/
+
 https://raw.githubusercontent.com/bludit/password-recovery-tool/master/recovery.php
+
 https://md5decrypt.net/en/Sha1/
+
 https://www.exploit-db.com/exploits/47502
