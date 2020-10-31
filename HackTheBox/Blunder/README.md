@@ -1,6 +1,6 @@
 # HackTheBox – Blunder
 
-- Write-Up Author: Calvin Lai \[[MOCTF](https://www.facebook.com/MOCSCTF)\]
+- Write-Up Author: [Calvin Lai](http://security.calvinlai.com)
 
 ## **Question:**
 > Blunder
@@ -259,12 +259,12 @@ Attacker Machine: 10.10.14.16
 	![img](./img/17.png)
 
 ***
-### 4. Recommendation:
+### 5. Recommendation:
 
 Missing patches are very common in the real-life system, we need to keep the system patches are updated to avoid know attack. 
 
 ***
-### 5. Reference Link
+### 6. Reference Link
 
 https://rastating.github.io/bludit-brute-force-mitigation-bypass/
 
