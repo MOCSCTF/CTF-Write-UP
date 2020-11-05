@@ -215,7 +215,7 @@ args1-6 are in %rdi,%rds,%rdx,%rxc,%r8 and %r9
 
 ```
 
-[!img](./img/2.png)
+![img](./img/2.png)
 
 detail can be found on [Stack frame layout on x86-64](https://eli.thegreenplace.net/2011/09/06/stack-frame-layout-on-x86-64) 
 
