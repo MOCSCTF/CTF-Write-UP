@@ -4,7 +4,7 @@
 
 - Flag:nactf{r0p_y0ur_w4y_t0_v1ct0ry_698jB84iO4OH1cUe}
 
-## **Question:**
+## Challenge Description:
 dROPit - 300
 
 >You're on your own this time. Can you get a shell?  
