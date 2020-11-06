@@ -190,8 +190,8 @@ detail can be found on [PLT and GOT](https://www.technovelty.org/linux/plt-and-g
 
 so we just let the program run __puts@plt(*puts@got)__, that both thing we can find in the program that will lead us to find the address of puts@libc  
 
-then, we have to consider how to let program run __puts@plt(*puts@got)__ 
-????? explain of the x64 stack
+then, we have to consider how to let program run __puts@plt(*puts@got)__  
+explain of the x64 stack
 ```
  Low Address |                 |
              +-----------------+
