@@ -5,6 +5,8 @@
 ## **Question:**
 > Remote
 
+![img](./img/1.png)
+
 ## Background
 
 Remote is a Windows machine from HackTheBox, that is focusing on the CVE exploitation technique, for training your ethical hacking skills and penetration testing skills. 
