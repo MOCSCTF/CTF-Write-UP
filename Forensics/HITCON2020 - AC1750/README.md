@@ -7,6 +7,7 @@
 AC1750
 
 >Challenge description
+
 >My router is weird, can you help me find the problem?
 
 Attachment: [ac1750.pcapng](./ac1750.pcapng)
@@ -41,7 +42,7 @@ Attachment: [ac1750.pcapng](./ac1750.pcapng)
 
 	![img](./img/8.JPG)
 
--Up to this stage, let’s summarize what we gathered – it’s a tp-link device, model is “Archer C7” the device is comprised and there is strange traffic through port TCP 4321 and UDP 20002.
+- Up to this stage, let’s summarize what we gathered – it’s a tp-link device, model is “Archer C7” the device is comprised and there is strange traffic through port TCP 4321 and UDP 20002.
 
 - After some research in Google, it’s pretty sure that the device is compromised by CVE-2020-10882. Although we cannot get the firmware version from the packet capture to verify but from the device model, traffic flow and the port used (UDP 20002), the exploit can be confirmed. Here is a good article for the details:
 https://starlabs.sg/blog/2020/10/analysis-exploitation-of-a-recent-tp-link-archer-a7-vulnerability/
@@ -67,6 +68,6 @@ ivec = "1234567890abcdef1234567890abcdef"
 
 - The output part “printf” function is the payload (in the end you can find that the payload is through printf to save to file named “f”, then execute the file “f” to exploit. Follow the UDP stream one by one, you can get the full exploit code which include the flag:
 
-![img](./img/12.JPG)
+![img](./img/12.jpg)
 
 > hitcon{Why_can_one_place_be_injected_twice}
