@@ -8,14 +8,12 @@
 
 歡迎加入我們:</br>
 CTFTimes: https://ctftime.org/team/120747</br>
-Facebook: https://www.facebook.com/MOCSCTF
+Facebook: https://www.facebook.com/MOCSCTF</br></br></br>
 
-
-</br>
 感謝以下提供協助:</br>
 Teru@MOCTF</br>
 Bon@MOCTF</br>
 Wendy@MOCTF</br>
 RB916120@MOCTF</br>
-molamola@MOCTF</br>
-[Calvin Lai](http://security.calvinlai.com)</br>
+molamola@MOCTF
+[Calvin Lai](http://security.calvinlai.com)
