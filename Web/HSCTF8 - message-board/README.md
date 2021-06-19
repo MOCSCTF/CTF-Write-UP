@@ -4,7 +4,7 @@
 
 - Flag:**flag{y4m_y4m_c00k13s}**
 ## **Question:**
->message-board
+message-board
 
 ![img](./img/1.png)
 

@@ -4,13 +4,14 @@
 
 - Flag:**flag{any_info_is_good_info}**
 ## **Question:**
->big-blind
+big-blind
 
 ![img](./img/1.png)
 
 ## Write up:
 
 The website is simple and just a login page. When you input some characters like ', it return 500 Internal Server Error. It's SQL injection challenge. 
+
 ![img](./img/2.png)
 
 

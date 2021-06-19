@@ -18,6 +18,6 @@ According to the question, we have to find out the latitude and longitude of pic
 
 ![img](./img/3.png)
 
-> We submitted **flag{35.898,14.517,43.937,12.445}**, but it's not correct.
+We submitted **flag{35.898,14.517,43.937,12.445}**, but it's not correct.
 
-> After checked the flag with supprot on discord, I got this reply "you're off by 0.001 on three of the values". Since the game is ended, we don't have enough time to find out the correct flag.
+After checked the flag with supprot on discord, I got this reply "you're off by 0.001 on three of the values". Since the game is ended, we don't have enough time to find out the correct flag.

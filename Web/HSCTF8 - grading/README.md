@@ -4,7 +4,7 @@
 
 - Flag:**flag{th3_an5w3r_w4s_HSCTF_0bvi0us1y}**
 ## **Question:**
->grading
+grading
 
 ![img](./img/1.png)
 
