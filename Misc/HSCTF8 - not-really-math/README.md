@@ -9,7 +9,9 @@ sneks
 ![img](./img/1.png)
 
 Attachment: 
+
 [not-really-math.pdf](./not-really-math.pdf)
+
 [not-really-math.py](./not-really-math.py)
 
 ## Write up:
