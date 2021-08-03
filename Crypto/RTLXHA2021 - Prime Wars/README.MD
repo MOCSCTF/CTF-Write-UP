@@ -16,7 +16,7 @@ Author: H-mmer#8548
 [chall.txt](./chall.txt)
 
 ## Write up
-we can check the n on factordb.com</br> but no luck, we can't find the prime number. but lets see if we cloud find the GCD of n1 and n2, if we could find it we can easily find P and Q.
+we can check the n on factordb.com</br> but no luck, we can't find the prime number. but lets see if we cloud find the GCD of n1 and n2, we can easily find P and Q.
 
 [rsa modulus attack](https://ctf-wiki.org/crypto/asymmetric/rsa/rsa_module_attack/#_5)
 [RSA Attacks: Common Modulus](https://infosecwriteups.com/rsa-attacks-common-modulus-7bdb34f331a5)
