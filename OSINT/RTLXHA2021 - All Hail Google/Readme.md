@@ -33,14 +33,17 @@ First, let guess the place of this image,
 
 characteristic 1.
 this building looking like Thailand/vietnam style, a kind of east asia building style
+
 ![img](./img/1.PNG) 
 
 characteristic 2.
 people with black hair wearing long clothing, i guess this place is near equatorial(赤道)
+
 ![img](./img/2.PNG) ![img](./img/2.1.PNG) 
 
 characteristic 3.
 miniature of Arc de Triomphe
+
 ![img](./img/3.PNG) 
 
 characteristic 4.
