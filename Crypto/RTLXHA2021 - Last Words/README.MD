@@ -5,13 +5,11 @@
 - Flag:**RTL{1_c0uld_pr0b4bly_m4k3_th15_al0t_h4rd3r_next_t1m3!!!-e82fac7a780f72579c47b6ce0d5b7fd82eb6192ed65949ca485309b5}**
 
 ## **Question:**
-> Last Words
+Last Words
 
-```
-My friend told me his father died and his father had a last message for me, but it was in this weird format. Can you help me out?
-
-Author: H-mmer#8548
-```
+>My friend told me his father died and his father had a last message for me, but it was in this weird format. Can you help me out?
+>
+>Author: H-mmer#8548
 
 [chall.txt](./chall.txt)
 

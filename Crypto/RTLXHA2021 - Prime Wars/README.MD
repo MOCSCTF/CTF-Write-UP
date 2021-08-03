@@ -5,13 +5,10 @@
 - Flag:**RTL{th3r3_pr1m35_4nd_0pt1m4l_pr1m35_wh1ch_do_y0u_u53??-a1b8f0d453def3be67ebf3a313550f73e76951672b05b3bdd39da3e5}**
 
 ## **Question:**
-> Prime Wars
+Prime Wars
 
-```
-There's a battle between Good and Evil and the Evil empires messaging system is not fully functioning. We've intercepted their message they had to send twice.
-
-Author: H-mmer#8548
-```
+>There's a battle between Good and Evil and the Evil empires messaging system is not fully functioning. We've intercepted their message they had to send twice.
+>Author: H-mmer#8548
 
 [chall.txt](./chall.txt)
 
@@ -21,7 +18,7 @@ we can check the n on factordb.com</br> but no luck, we can't find the prime num
 [rsa modulus attack](https://ctf-wiki.org/crypto/asymmetric/rsa/rsa_module_attack/#_5)
 [RSA Attacks: Common Modulus](https://infosecwriteups.com/rsa-attacks-common-modulus-7bdb34f331a5)
 
-Obviously, we can find the GCD of them. we can lauch the RSA modulus attack as below code. 
+Obviously, we can find the GCD of them. we can launch the RSA modulus attack as below code. 
 
 ```python
 import libnum
