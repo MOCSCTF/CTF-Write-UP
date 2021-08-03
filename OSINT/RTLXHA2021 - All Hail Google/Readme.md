@@ -17,16 +17,16 @@ All Hail Google
 
 ## Write up
 **below tool mentioned in this article.**  
-[Ghunt](https://github.com/mxrch/GHunt) - GHunt is a modulable OSINT tool designed to evolve over the years, and incorporates many techniques to investigate Google accounts, or objects. 
-[Wikimapia.org](http://wikimapia.org/) - a Wikipedia of map  
+[Ghunt](https://github.com/mxrch/GHunt) - GHunt is a modulable OSINT tool designed to evolve over the years, and incorporates many techniques to investigate Google accounts, or objects.   
 
-**some inspiration**
-after the event and review other's writeup.
-i aware the place can be found if we using vietnamese for searching. 
-How could we search the thing without language limitation?
-google lens can help!! i should try this wonderful thing in next OSINT challenge.
+**some inspiration**  
+after the event and review other's writeup.  
+i aware the place can be found if we using vietnamese for searching.   
+How could we search the thing without language limitation?  
+google lens can help!! i should try this wonderful thing in next OSINT challenge.  
 
-btw during the challenge, i got rick rolled twice by the author... lollll....
+btw during the challenge, i got rick rolled twice by the author... lollll....  
+
 ---
 
 First, let guess the place of this image,
