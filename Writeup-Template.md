@@ -13,10 +13,10 @@
 
 ## Write up  
 __Reference:__  
-[MOCSCTF Github](https://eli.thegreenplace.net/2011/09/06/stack-frame-layout-on-x86-64) - MOCSCTF github
-[CTFTimes](https://ctftime.org/team/120747) - MOCSCTF CTFTIMES
-[Facebook](https://www.facebook.com/MOCSCTF) - MOCSCTF facebook
-[Git Document](https://guides.github.com/features/mastering-markdown/) - Git reference
+[MOCSCTF Github](https://eli.thegreenplace.net/2011/09/06/stack-frame-layout-on-x86-64) - MOCSCTF github  
+[CTFTimes](https://ctftime.org/team/120747) - MOCSCTF CTFTIMES  
+[Facebook](https://www.facebook.com/MOCSCTF) - MOCSCTF facebook  
+[Git Document](https://guides.github.com/features/mastering-markdown/) - Git reference  
 
 ---
 
@@ -60,5 +60,5 @@ d|d
 
 to place new line with **double space** in the end of line
 
-to placing image in readme.md
+to placing image in readme.md  
 ![this is alt text](https://avatars.githubusercontent.com/u/68818539?v=4)
