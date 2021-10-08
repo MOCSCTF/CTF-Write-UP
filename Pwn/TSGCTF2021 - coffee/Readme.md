@@ -15,11 +15,11 @@
 ## Write up  
 __Reference:__  
 [Stack frame layout on x86-64](https://eli.thegreenplace.net/2011/09/06/stack-frame-layout-on-x86-64)  
-[PLT and GOT](https://www.technovelty.org/linux/plt-and-got-the-key-to-code-sharing-and-dynamic-libraries.html)
-[ELF document](https://stevens.netmeister.org/631/elf.html)
-[Exploiting Format String bug](https://tripoloski1337.github.io/ctf/2020/06/11/format-string-bug.html) - good explain for format string bugs
-[printf format string](https://en.wikipedia.org/wiki/Printf_format_string) - printf format string wiki
-[格式化字符串漏洞简介](https://bbs.pediy.com/thread-253638.htm) - read this if you know chinese haha
+[PLT and GOT](https://www.technovelty.org/linux/plt-and-got-the-key-to-code-sharing-and-dynamic-libraries.html)  
+[ELF document](https://stevens.netmeister.org/631/elf.html)  
+[Exploiting Format String bug](https://tripoloski1337.github.io/ctf/2020/06/11/format-string-bug.html) - good explain for format string bugs  
+[printf format string](https://en.wikipedia.org/wiki/Printf_format_string) - printf format string wiki  
+[格式化字符串漏洞简介](https://bbs.pediy.com/thread-253638.htm) - read this if you know chinese haha  
 
 ---
 
