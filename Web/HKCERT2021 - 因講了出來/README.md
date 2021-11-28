@@ -1,5 +1,5 @@
 # HKCERT2021 - 因講了出來
-- Write-Up Author: [Ivan Mak](https://hackmd.io/JH0dysBTSx6H1o1PZ7OqWg)
+- Write-Up Author: [Ivan Mak](https://ank.pw/tech/)
 
 - Flag: hkcert21{php_da_b3st_l4ng3ag3_3v3r_v3ry_4ws0m3}
 

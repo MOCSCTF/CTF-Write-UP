@@ -1,5 +1,5 @@
 # HKCERT2021 - Freedom
-- Write-Up Author: [Ivan Mak](https://hackmd.io/JH0dysBTSx6H1o1PZ7OqWg)
+- Write-Up Author: [Ivan Mak](https://ank.pw/tech/)
 
 - Flag: hkcert21{w3_sh0u1d_n0t_g1v3_much_fr3ed0m_t0_us3r5_wh3n_1t_c0m3s_t0_cryp70gr4phy}
 

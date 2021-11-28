@@ -1,5 +1,5 @@
 # HKCERT2021 - 理性與任性之間
-- Write-Up Author: [Ivan Mak](https://hackmd.io/JH0dysBTSx6H1o1PZ7OqWg)
+- Write-Up Author: [Ivan Mak](https://ank.pw/tech/)
 
 - Flag: hkcert21{s1mp13_d3shu3ff3l3_1s_s1mp13}
 
