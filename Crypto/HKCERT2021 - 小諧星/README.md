@@ -1,5 +1,5 @@
 # HKCERT2021 - 小諧星
-- Write-Up Author: Ivan Mak \[[MOCTF](https://hackmd.io/JH0dysBTSx6H1o1PZ7OqWg)\]
+- Write-Up Author: [Ivan Mak](https://hackmd.io/JH0dysBTSx6H1o1PZ7OqWg)
 
 - Flag: hkcert21{th1s_i5_wh4t_w3_c4ll3d_sn4k3o1l_crypt0sy5t3m}
 

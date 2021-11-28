@@ -1,5 +1,5 @@
 # HKCERT2021 - 無聲浪
-- Write-Up Author: Ivan Mak \[[MOCTF](https://hackmd.io/JH0dysBTSx6H1o1PZ7OqWg)\]
+- Write-Up Author: [Ivan Mak](https://hackmd.io/JH0dysBTSx6H1o1PZ7OqWg)
 
 - Flag: hkcert21{w0rds_fr0m_3mpt1n3ss}
 

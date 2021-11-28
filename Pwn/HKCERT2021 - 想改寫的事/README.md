@@ -1,5 +1,5 @@
 # HKCERT2021 - 想改寫的事
-- Write-Up Author: Ivan Mak \[[MOCTF](https://hackmd.io/JH0dysBTSx6H1o1PZ7OqWg)\]
+- Write-Up Author: [Ivan Mak](https://hackmd.io/JH0dysBTSx6H1o1PZ7OqWg)
 
 - Flag: hkcert21{be_c4r3_WIth_7he_5iZe}
 

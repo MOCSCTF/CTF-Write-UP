@@ -1,5 +1,5 @@
 # HKCERT2021 - 角落生物 1
-- Write-Up Author: Ivan Mak \[[MOCTF](https://hackmd.io/JH0dysBTSx6H1o1PZ7OqWg)\]
+- Write-Up Author: [Ivan Mak](https://hackmd.io/JH0dysBTSx6H1o1PZ7OqWg)
 
 - Flag: hkcert21{squirrels-or-1-or-2-or-3-and-you}
 

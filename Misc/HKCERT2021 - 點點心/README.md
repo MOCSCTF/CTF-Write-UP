@@ -1,5 +1,5 @@
 # HKCERT2021 - 點點心
-- Write-Up Author: Ivan Mak \[[MOCTF](https://hackmd.io/JH0dysBTSx6H1o1PZ7OqWg)\]
+- Write-Up Author: [Ivan Mak](https://hackmd.io/JH0dysBTSx6H1o1PZ7OqWg)
 
 - Flag: hkcert21{Dim-Sum-As-Variant_Dim-G-As-Boolean_MsgBox-CJK-Homograph}
 

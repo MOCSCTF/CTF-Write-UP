@@ -1,5 +1,5 @@
 # HKCERT2021 - 所有遺失的東西
-- Write-Up Author: Ivan Mak \[[MOCTF](https://hackmd.io/JH0dysBTSx6H1o1PZ7OqWg)\]
+- Write-Up Author: Teru Lei \[[MOCTF](https://www.facebook.com/MOCSCTF)\]
 
 - Flag: hkcert21{nev3r_uSe_pYth0n_45_sanDBox}
 
