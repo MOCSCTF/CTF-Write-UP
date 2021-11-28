@@ -4,11 +4,11 @@
 - Flag: hkcert21{w0rds_fr0m_3mpt1n3ss}
 
 ## **Question:**
-無聲浪
+無聲浪 (50 points)
 
 >Challenge description
 
-![img](./img/1.PNG)
+![img](./img/1.png)
 
 Attachment: [waterwave.wav](./waterwave.wav)
 
@@ -126,7 +126,7 @@ Window=36 Watermark Detected [NC= 21.0468 WM=00]
 
 ```
 
-- 6. 十六進位轉 ASCII
+6. 十六進位轉 ASCII
 
 ![img](./img/2.png)
 
