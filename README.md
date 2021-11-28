@@ -8,10 +8,8 @@
 
 歡迎加入我們:</br>
 CTFTimes: https://ctftime.org/team/120747</br>
-Facebook: https://www.facebook.com/MOCSCTF
+Facebook: https://www.facebook.com/MOCSCTF</br></br></br>
 
-
-</br>
 感謝以下提供協助:</br>
 Teru@MOCTF</br>
 Bon@MOCTF</br>
