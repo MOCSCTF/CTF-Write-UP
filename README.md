@@ -13,7 +13,7 @@ Facebook: https://www.facebook.com/MOCSCTF</br></br></br>
 感謝以下提供協助:</br>
 Teru@MOCTF</br>
 Bon@MOCTF</br>
-Wendy@MOCTF</br>
+[Wendy@MOCTF](https://bluebear.info)</br>
 RB916120@MOCTF</br>
 molamola@MOCTF</br>
 [Calvin Lai](http://security.calvinlai.com)</br>
