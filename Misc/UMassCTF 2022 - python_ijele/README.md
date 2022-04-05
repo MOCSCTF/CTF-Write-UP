@@ -55,4 +55,6 @@ print(__builtins__.__dict__['__IMPORT__'.lower()]('OS'.lower()).__dict__['SYSTEM
 
 ![img](./img/4.png)
 
+Bingo! I get the flag.
+
 > UMASS{congrats-now-you-are-multilingual}

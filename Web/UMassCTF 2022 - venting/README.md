@@ -82,6 +82,7 @@ get_table()
 ```
 
 Bingo! The password is the flag.
+
 ![img](./img/7.png)
 
 
