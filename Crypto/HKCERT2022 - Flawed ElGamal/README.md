@@ -8,7 +8,7 @@ Flawed ElGamal (50 points)
 
 >Challenge description
 
-![img](./img/1.PNG)
+![img](./img/1.png)
 
 Attachment: [chall.py](./chall.py)
 

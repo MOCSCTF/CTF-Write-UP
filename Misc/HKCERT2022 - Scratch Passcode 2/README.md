@@ -8,7 +8,7 @@ Scratch Passcode 2 (125 points)
 
 >Challenge description
 
-![img](./img/1.PNG)
+![img](./img/1.png)
 
 Scratch: [link](https://scratch.mit.edu/projects/755732653/)
 
